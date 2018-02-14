@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Rolling_Dice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="whG-Sc-Tgx">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diceeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="7aY-UV-hHv">
+                                <rect key="frame" x="40" y="65" width="294" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="daO-Ur-xxC"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="ZeG-qV-xzt">
+                                <rect key="frame" x="20" y="250" width="128" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="FpM-5V-C1T"/>
+                                    <constraint firstAttribute="height" constant="128" id="VbO-xq-jxP"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice2" translatesAutoresizingMaskIntoConstraints="NO" id="kLv-C9-8o5">
+                                <rect key="frame" x="227" y="250" width="128" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="kgM-n2-Zxa"/>
+                                    <constraint firstAttribute="height" constant="128" id="pdS-ce-PDQ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wSQ-S4-vrF" customClass="RoundButton" customModule="Rolling_Dice" customModuleProvider="target">
+                                <rect key="frame" x="112" y="497" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="0.55774111675126903" green="0.083432945918796797" blue="0.004818762509899586" alpha="0.64156142979452058" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Press  or  Shake Phone">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="17" name="MarkerFelt-Wide"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="75"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="rollBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OEe-nZ-w4a"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="whG-Sc-Tgx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="7zG-WH-Eun"/>
+                            <constraint firstItem="whG-Sc-Tgx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ELC-jR-PAv"/>
+                            <constraint firstItem="whG-Sc-Tgx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="S2n-Lx-hUt"/>
+                            <constraint firstItem="whG-Sc-Tgx" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="VHl-ly-sGP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kLv-C9-8o5" secondAttribute="trailing" constant="20" id="Wxm-wV-xbC"/>
+                            <constraint firstItem="7aY-UV-hHv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="Y0O-2z-NSh"/>
+                            <constraint firstItem="7aY-UV-hHv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="clf-zl-dIk"/>
+                            <constraint firstItem="ZeG-qV-xzt" firstAttribute="top" secondItem="7aY-UV-hHv" secondAttribute="bottom" constant="57" id="k6x-vO-TYb"/>
+                            <constraint firstItem="ZeG-qV-xzt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ljB-F7-o7l"/>
+                            <constraint firstItem="kLv-C9-8o5" firstAttribute="top" secondItem="7aY-UV-hHv" secondAttribute="bottom" constant="57" id="sf3-d7-ej8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="diceImageView1" destination="ZeG-qV-xzt" id="JVA-gq-Jfy"/>
+                        <outlet property="diceImageView2" destination="kLv-C9-8o5" id="NZh-q0-HT4"/>
+                        <outlet property="rollBtn" destination="wSQ-S4-vrF" id="Gql-ts-1DD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dice1" width="128" height="128"/>
+        <image name="dice2" width="64" height="64"/>
+        <image name="diceeLogo" width="294" height="192"/>
+        <image name="newbackground" width="500" height="466"/>
+    </resources>
+</document>
